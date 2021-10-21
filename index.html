@@ -1065,6 +1065,8 @@ function tick(){
 
 	// stop is down to zero
 	if (secondsRemaining === 0){
+		var audio = new Audio("https://raw.githubusercontent.com/Akmal257/mall-github.io/master/audiogg.mp3"); 
+		audio.play();
 		alert("Done!");
 		clearInterval(intervalHandle);
 		resetPage();

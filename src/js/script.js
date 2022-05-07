@@ -4,7 +4,9 @@ const appShortcut = document.querySelector('.appShortcut');
 function closeApp() {
     theWindow.style.display = 'none';
     appShortcut.style.display = 'block'; 
-   
+
+      // ".theWindow": { "2s linear 0s alternate wipe-out-bottom-right" }
+  
 }
     
 

@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import "https://unpkg.com/transition-style";
 
 body, html {
     font-family: 'Quicksand', sans-serif;
     color: #222222;
-}
-
-.theBackground {
-    background:url("https://wallpx.com/image/2021/07/anime-landscape-anime-starry-sky-night-scenery-mood-house.jpg");
+    background:url("https://wallpx.com/image/2021/07/anime-landscape-anime-starry-sky-night-scenery-mood-house.jpg") ;
     background-size: 100%;
-
-  
+    
     
 }
+
+
 
 .theWindow {
     position: absolute;
     margin: auto;
+    padding-bottom: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -26,6 +26,8 @@ body, html {
     border-radius: 8px;
     overflow: hidden;
     cursor: move;
+    backdrop-filter: blur(5px);
+    
 }
 
 .topBar {
@@ -36,7 +38,7 @@ body, html {
 .topBar .title {
     font-size: 20px;
     margin-top: 2px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .topBar .buttons {
@@ -50,19 +52,28 @@ body, html {
 
 .main {
     display: flex;
-    padding: 30px 50px;
+    padding: 10px 50px;
 }
 
 .main .title {
-    margin-top: 30px;
+
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+.main .title h1{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 50px;
 }
 
 .main img {
     margin-left: auto;
     margin-right: auto;
-    width:314px;
+    width:350px;
+    height: fit-content;
     box-shadow: 0px 8px 15px rgba(103, 111, 163, 0.5);
     border-radius: 8px;
+    
     
 
 }
@@ -70,20 +81,40 @@ body, html {
 .title small {
     margin-bottom: 0px;
     font-size: 30px;
+    
 }
 
 
 
 .title p {
-    margin: 20px 0;
+    
+    margin-top: 20px;
 }
 
+.title .text{
+  padding-top: 10px;
+  color: #222222;
+  padding-bottom: 0px;
+  text-align: justify;
+  text-decoration: none;
+  display: block;
+}
+.title .text2{
+
+  color: #222222;
+  text-align: justify;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 10px;
+}
 
 
 .portfolio .title {
     display: block;
     padding-top: 10px;
     padding-bottom: 12px;
+    margin: 10px;
+    
 }
 
 .main .btn {
@@ -92,12 +123,18 @@ body, html {
     box-shadow: 0px 2px 5px rgba(103, 111, 163, 0.25);
     border-radius: 5px;
     padding: 15px;
+   
     font-size: 13px;
    
     color: #ffffff;
     flex: 70%;
-    
 }
+.btn:hover,
+.btn:focus {
+  background-color: #fff;
+  color: #333;
+}
+
 
 .skills .title {
     display: block;
@@ -156,10 +193,11 @@ body, html {
 
     .main img{
     
-    margin-right: 5px;
+    margin-left: 40px;
     width: 176.80px;
     height: 250px;
     position:fixed;
+    align-items: center;
     
 
     }
@@ -283,3 +321,16 @@ body, html {
     100% {
       transform: translate(-50%, 200%); } }
    */
+
+   @keyframes wipe-out-bottom-right {
+    from {
+      clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+    }
+    to {
+      clip-path: polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%);
+    }
+  }
+  
+  [transition-style="out:wipe:bottom-right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-bottom-right both;
+  }

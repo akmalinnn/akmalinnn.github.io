@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body, html {
+    font-family: 'Quicksand', sans-serif;
+    color: #222222;
+}
+
+.theBackground {
+    background:url("https://wallpx.com/image/2021/07/anime-landscape-anime-starry-sky-night-scenery-mood-house.jpg");
+    background-size: 100%;
+
+  
+    
+}
+
+.theWindow {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    /* background: linear-gradient(111.74deg, rgba(239, 245, 255, 0.75) 10.26%, rgba(215, 229, 255, 0.75) 53.1%, rgba(215, 229, 255, 0.75) 90.91%); */
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 8px 15px rgba(103, 111, 163, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: move;
+}
+
+.topBar {
+    margin: 10px 15px;
+    display: flex;
+}
+
+.topBar .title {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.topBar .buttons {
+    margin-left: auto;
+}
+
+
+.buttons img {
+    margin-left: 20px;
+}
+
+.main {
+    display: flex;
+    padding: 30px 50px;
+}
+
+.main .title {
+    margin-top: 30px;
+}
+
+.main img {
+    margin-left: auto;
+    margin-right: auto;
+    width:314px;
+    box-shadow: 0px 8px 15px rgba(103, 111, 163, 0.5);
+    border-radius: 8px;
+    
+
+}
+
+.title small {
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+
+
+.title p {
+    margin: 20px 0;
+}
+
+
+
+.portfolio .title {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.main .btn {
+    text-decoration: none;
+    background: #1b1f25;
+    box-shadow: 0px 2px 5px rgba(103, 111, 163, 0.25);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 13px;
+   
+    color: #ffffff;
+    flex: 70%;
+    
+}
+
+.skills .title {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 12px;
+}
+
+.minimize, .maximize, .exit {
+    cursor: pointer;
+}
+
+.appShortcut {
+    margin: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.appShortcut img {
+    transition: .3s;
+}
+
+.appShortcut img:hover {
+    filter: drop-shadow(0 5px 5px rgb(55, 76, 190, .5));
+}
+
+@media(min-width: 900px) {
+
+    .theWindow {
+        width: 860px;
+        height: 560px;
+    }
+}
+
+
+@media(max-width: 900px) {
+    .theWindow {
+        width: 90%;
+        height: 90%;
+        overflow: scroll;
+    }
+    .theBackground{
+        background-size: 300%;
+    }
+    .btn{
+        width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    }
+    
+
+    .main .title{
+        margin-top: 270px;
+    
+    }
+
+    .main img{
+    
+    margin-right: 5px;
+    width: 176.80px;
+    height: 250px;
+    position:fixed;
+    
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+#butn {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+ 
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    outline: none; }
+    #butn span {
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      top: 50%;
+      left: 50%;
+      background: #fffefe;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: all 0.3s linear; }
+
+  #butn.on:hover span::before {
+    width: 100%;
+    transition: all 0.3s linear; }
+  
+  #butn.on span:nth-child(1) {
+    animation: span-first-on 0.5s ease-in-out;
+    animation-fill-mode: forwards; }
+  
+  #butn.on span:nth-child(2) {
+    animation: span-second-on 0.5s ease-in-out;
+    animation-fill-mode: forwards; }
+  
+  #butn.on span:nth-child(3) {
+    animation: span-third-on 0.5s ease-in-out;
+    animation-fill-mode: forwards; }
+
+    #butn span::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: gray;
+        transition: all 0.3s linear; }
+      /* #butn span:nth-child(1) {
+        animation: span-first-off 0.5s ease-in-out;
+        animation-fill-mode: forwards; }
+      #butn span:nth-child(2) {
+        animation: span-second-off 0.5s ease-in-out;
+        animation-fill-mode: forwards; }
+      #butn span:nth-child(3) {
+        animation: span-third-off 0.5s ease-in-out;
+        animation-fill-mode: forwards; } */
+  
+  
+  @keyframes span-first-on {
+    0% {
+      transform: translate(-50%, -300%); }
+    30% {
+      transform: translate(-50%, -50%); }
+    100% {
+      transform: translate(-50%, -50%) rotate(-45deg); } }
+/*   
+  @keyframes span-first-off {
+    0% {
+      transform: translate(-50%, -50%) rotate(-45deg); }
+    30% {
+      transform: translate(-50%, -50%) rotate(0deg); }
+    100% {
+      transform: translate(-50%, -300%); } } */
+  
+  @keyframes span-second-on {
+    0% {
+      transform: translate(-50%, -50%); }
+    25% {
+      background: gray; }
+    50% {
+      transform: translate(-50%, -50%) scale(1); }
+    100% {
+      transform: translate(-150%, -50%) scale(0); } }
+  
+  /* @keyframes span-second-off {
+    0% {
+      transform: translate(-150%, -50%) scale(0); }
+    25% {
+      background: gray; }
+    50% {
+      transform: translate(-50%, -50%) scale(1); }
+    100% {
+      transform: translate(-50%, -50%); } } */
+  
+  @keyframes span-third-on {
+    0% {
+      transform: translate(-50%, 200%); }
+    30% {
+      transform: translate(-50%, -50%); }
+    100% {
+      transform: translate(-50%, -50%) rotate(45deg); } }
+  
+  /* @keyframes span-third-off {
+    0% {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    30% {
+      transform: translate(-50%, -50%) rotate(0deg); }
+    100% {
+      transform: translate(-50%, 200%); } }
+   */

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="theBackground">
+
+      <div class="appShortcut">
+        <!-- <img src="./src/img/logo.png" alt="logo" width="48" height="48" onclick="return openApp();" title="Open Window"> -->
+        <button id="butn" width="48" height="48" onclick="return openApp();" ><span></span><span></span><span></span></button>
+      </div>
+    <div class="theWindow">
+        <div class="topBar">
+            
+            <p class="title">Waifu Profile</p>
+            <div class="buttons">
+                <img class="minimize" src="./src/img/minimize.png" alt="minimize" onclick="return openApp();" title="Open Window">
+                <img class="maximize" src="./src/img/maximize.png" alt="maximize" onclick="return maximazeApp();" >
+                <img class="exit" src="./src/img/exit.png" alt="exit" onclick="return closeApp();" title="Close Button">
+            </div>
+        </div>
+        <div class="main">
+            <img src="./src/img/images.webp"   alt="image">
+            <div class="title">
+                
+
+                <small>Hello, my name is</small>
+                <h1>Jeanne D'arc</h1>
+                
+                <div class="portfolio">
+                    
+                    <a class="btn" href="https://typemoon.fandom.com/wiki/Jeanne_d%27Arc_(Ruler)">Find My Profile</a>
+                    <a class="btn" href="https://www.pixiv.net/en/tags/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%8C%E3%83%BB%E3%83%80%E3%83%AB%E3%82%AF(Fate)">Find My Art</a>
+                    <a class="btn" href="https://cdn.discordapp.com/attachments/932997961418428468/968777331613237258/IMG_20220427_140209.jpg">Find my lewd</a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

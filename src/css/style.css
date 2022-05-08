@@ -4,10 +4,15 @@
 body, html {
     font-family: 'Quicksand', sans-serif;
     color: #222222;
-    background:url("https://wallpx.com/image/2021/07/anime-landscape-anime-starry-sky-night-scenery-mood-house.jpg") ;
-    background-size: 100%;
+   
     
-    
+}
+
+.theBackground{
+  background:url("https://wallpx.com/image/2021/07/anime-landscape-anime-starry-sky-night-scenery-mood-house.jpg") ;
+  background-size: 100%;
+  
+
 }
 
 
@@ -24,11 +29,19 @@ body, html {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 8px 15px rgba(103, 111, 163, 0.5);
     border-radius: 8px;
-    overflow: hidden;
+    
     cursor: move;
     backdrop-filter: blur(5px);
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+      width: 0;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
     
-}
+
 
 .topBar {
     margin: 10px 15px;
@@ -107,6 +120,16 @@ body, html {
   display: block;
   padding-bottom: 10px;
 }
+ .text3 {
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: justify;
+}
+.gifa{
+  margin-left: 70px;
+  margin-right: 50px;
+  align-content: center;
+}
 
 
 .portfolio .title {
@@ -179,15 +202,32 @@ body, html {
         background-size: 300%;
     }
     .btn{
-        width: 50%;
+        width: auto;
     height: auto;
     display: block;
     margin-top: 10px;
+  
+    text-align: center;
     }
+    .text3{
+      margin-left: 70px;
+      margin-right: 70px;
+      text-align: justify;
     
+
+    }
+    .gifa{
+      display:flex; 
+      justify-content:center; 
+      align-items:center;
+    
+
+    }
 
     .main .title{
         margin-top: 270px;
+        margin-left: auto;
+        margin-right: auto;
     
     }
 
@@ -202,8 +242,8 @@ body, html {
 
     }
     
-}
 
+  }
 
 
 

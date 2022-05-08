@@ -129,6 +129,9 @@ body, html {
   margin-left: 70px;
   margin-right: 50px;
   align-content: center;
+  width: auto;
+  height: auto;
+  scale: 20%;
 }
 
 
@@ -209,19 +212,24 @@ body, html {
   
     text-align: center;
     }
-    .text3{
-      margin-left: 70px;
-      margin-right: 70px;
-      text-align: justify;
-    
 
+    .text3{
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: justify;
+  
+
+    }
+  
+    .title p
+    {
+      margin-left: -50px;
+      margin-right: -50px;
     }
     .gifa{
       display:flex; 
-      justify-content:center; 
-      align-items:center;
-       max-width: 100%;
-     height: auto;
+      width: 60%;
+      height: 20%;
     
 
     }

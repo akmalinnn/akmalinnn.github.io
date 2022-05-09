@@ -125,15 +125,44 @@ body, html {
   margin-right: 70px;
   text-align: justify;
 }
+
+.Npa{
+  margin-left: 70px;
+  margin-right: 70px;
+}
 .gifa{
   margin-left: 70px;
   margin-right: 50px;
   align-content: center;
   width: auto;
   height: auto;
-  scale: 20%;
+  box-shadow: 0px 8px 15px rgba(103, 111, 163, 0.5);
+
+}
+.gifb{
+  box-shadow: 0px 8px 15px rgba(103, 111, 163, 0.5);
+  width: auto;
+  height: auto;
+
 }
 
+.theWindow h1{
+  margin-left: 70px;
+}
+
+ .contents{
+
+  text-align: center;
+  display: flex;
+  margin-left: 70px;
+  margin-right: 50px;
+
+}
+
+.contents img{
+  width: 50%;
+ 
+}
 
 .portfolio .title {
     display: block;
@@ -220,7 +249,11 @@ body, html {
   
 
     }
-  
+    
+    .Npa{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     .title p
     {
       margin-left: -50px;
@@ -228,11 +261,41 @@ body, html {
     }
     .gifa{
       display:flex; 
-      width: 60%;
-      height: 20%;
+      margin-top: 5px;
+      margin-left: 27px;
+
     
 
     }
+    .gifb{
+      display:flex; 
+      margin-top: 5px;
+      margin-left: 27px;
+      margin-right: auto;
+    }
+
+    .body-wrapper{
+      width: 100%;
+      height: 100px;
+      flex: wrap;
+
+      
+  }
+  .body-items {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+.contents img{
+  width: 110%;
+  align-items: center;
+  margin-left: -20px;
+}
 
     .main .title{
         margin-top: 270px;
